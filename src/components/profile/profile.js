@@ -86,6 +86,7 @@ class profile extends Component {
                             <div className="right_content_profile">
                                 <div className="post_profile">
                                     <div className="post_head" id="post_head">
+                                        <img src={require("../img/hqdefault.jpg")} />
                                         <div className="post_title" id="post_title">
                                             <p><span id="post_title_me" className="font_post">Hoàng Thùy Linh</span> cùng với <span id="post_title_you" className="font_post" /> và <span id="post_title_number">120</span> người khác</p>
                                             <p id="post_time">31 tháng 1 lúc 14:48 · Công khai</p>
@@ -114,7 +115,7 @@ class profile extends Component {
                                             </div>
                                         </div>
                                         <div className="post_end_3">
-                                            <img src={require("../img/linhz.jpg")} alt="error" />
+                                            <img src={require("../img/logo.jpg")} alt="error" />
                                             <input type="text" placeholder="Viết bình luận..." />
                                             {/* <div class="send"> */}
                                             <img src={require("../img/send.png")} id="send" alt="error" />
