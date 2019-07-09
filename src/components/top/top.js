@@ -25,7 +25,7 @@ class top extends Component {
                 <div className="header_control">
                     <div className="logo_search">
                         <div className="logo">
-                            <Link to="/"><img src={require("../img/facebook.png")} alt="logo" /></Link>
+                            <Link to="/home"><img src={require("../img/facebook.png")} alt="logo" /></Link>
                         </div>
                         <div className="search">
                             <input type="text" name="search" placeholder="Tìm kiếm" />
@@ -39,7 +39,7 @@ class top extends Component {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/">Trang chủ</NavLink>
+                                <NavLink to="/home">Trang chủ</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/sss" activeClassName="selected">Tìm bạn bè</NavLink>

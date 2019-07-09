@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './css/style.css';
 class home extends Component {
+    componentDidMount(){
+        var height = window.innerHeight - 75;
+		document.getElementById('control_list').style.height = `${height}px`;
+    }
     render() {
         return (
             <div className="control_Content">
@@ -162,7 +166,7 @@ class home extends Component {
                                     <li>
                                         <img src={require("../img/c2.jpg")} alt="img" />
                                         <div className="control_text_two">
-                                            <h2> <a href="people.html" id="get_daSha" onclick="x_daSha()">Dasha Taran</a> </h2>
+                                            <h2> <a href="people" id="get_daSha" onClick="x_daSha()">Dasha Taran</a> </h2>
                                             <p>5 thằng bạn chung</p>
                                             <div className="control_btn_two"><button>Xác nhận</button><button>Xóa</button></div>
                                         </div>
@@ -170,7 +174,7 @@ class home extends Component {
                                     <li>
                                         <img src={require("../img/hotgirl-tram-anh-ava.jpg")} alt="img" />
                                         <div className="control_text_two">
-                                            <h2> <a href="people.html" id="get_tramAnh" onclick="x_tramAnh()">Trâm Anh</a> </h2>
+                                            <h2> <a href="people" id="get_tramAnh" onClick="x_tramAnh()">Trâm Anh</a> </h2>
                                             <p>Cã lớp là bạn chung</p>
                                             <div className="control_btn_two"><button>Xác nhận</button><button>Xóa</button></div>
                                         </div>
@@ -178,7 +182,7 @@ class home extends Component {
                                     <li>
                                         <img src={require("../img/hqdefault.jpg")} alt="img" />
                                         <div className="control_text_two">
-                                            <h2> <a href="people.html" id="get_thuyLinh" onclick="x_thuyLinh()">Hoàng Thùy Linh</a> </h2>
+                                            <h2> <a href="people" id="get_thuyLinh" onClick="x_thuyLinh()">Hoàng Thùy Linh</a> </h2>
                                             <p>17 thằng bạn chung</p>
                                             <div className="control_btn_two"><button>Xác nhận</button><button>Xóa</button></div>
                                         </div>
@@ -188,7 +192,7 @@ class home extends Component {
                         </div>
                     </div>
                     <div className="Four">
-                        <div className="control_list">
+                        <div className="control_list" id="control_list">
                             <ul>
                                 <li>
                                     <div className="friends">
@@ -306,6 +310,8 @@ class home extends Component {
                                 {/*  */}
                             </ul>
                         </div>
+
+                        
                         <div className="search_friends">
                             <input type="text" name="friends" placeholder="Tìm kiếm" />
                             <div className="control_sear_friends">

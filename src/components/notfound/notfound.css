@@ -1,0 +1,34 @@
+.error-page {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+}
+.error-page .error-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.error-page .error-content h1.error-title {
+   
+    color: #6d6e71;
+    font-size: 60px;
+}
+.error-page .error-content p {
+    font-size: 16px;
+}
+.search_content{
+    line-height: 26px;
+    color: #6d6e71;
+    font-size: 13px;
+    font-weight: 700;
+}
+.error-page .error-content form .form-group .form-control {
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.error-page .error-content form .form-group {
+    width: 50%;
+    margin: 0 auto 15px;
+}
