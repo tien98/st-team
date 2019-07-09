@@ -26,7 +26,7 @@ function App() {
             {/* <Route path="/people" component={People}></Route> */}
           </Switch>
           </>
-          <Route component={Notfound}></Route>
+          {/* <Route component={Notfound}></Route> */}
         </Switch>
       </div>
     </Router>
