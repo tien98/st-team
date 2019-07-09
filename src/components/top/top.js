@@ -75,9 +75,9 @@ class top extends Component {
                             <i className="fas fa-question-circle"></i>
                         </div>
                         <div className="control_img">
-                            {/* <NavLink to="/login"> */}
+                            <NavLink to="/login">
                             <i class="fas fa-sort-down"></i>
-                            {/* </NavLink> */}
+                            </NavLink>
                         </div>
                     </div>
                 </div>

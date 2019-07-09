@@ -14,10 +14,8 @@ function App() {
     <Router>
       <div>
         <Switch>
-
           <Route path="/login" component={Login}></Route>
           <Route path="/" exact component={Login}></Route>
-          
           <>
           <Top/>
           <Switch> 
