@@ -153,11 +153,11 @@ class Main extends Component {
                                     <tr>
                                         <td>
                                             <div>Birthday</div>
-                                            <input type="date" format='DD/MM/YYYY' name='birthday' onChange={this.handleOnChange} value={this.state.birthday}></input>
+                                            <input type="date" className="input-signup" format='DD/MM/YYYY' name='birthday' onChange={this.handleOnChange} value={this.state.birthday} />
                                         </td>
                                         <td>
                                             <div>Sex</div>
-                                            <select name='gender' onChange={this.handleOnChange} value={this.state.gender}>
+                                            <select className='input-signup' name='gender' onChange={this.handleOnChange} value={this.state.gender}>
                                                 <option value='Nam'>Male</option>
                                                 <option value="Nữ">Female</option>
                                             </select>

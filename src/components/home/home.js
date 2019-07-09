@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import './css/style.css';
+import Auth from '../../controllers/auth';
 class home extends Component {
+    constructor(props){
+        super(props);
+        this.Auth = new Auth();
+    }
+    componentWillMount(){
+        if (!this.Auth.loggedIn()) {
+            this.props.history.replace('/login');
+        }
+    }
     componentDidMount(){
         var height = window.innerHeight - 75;
 		document.getElementById('control_list').style.height = `${height}px`;
