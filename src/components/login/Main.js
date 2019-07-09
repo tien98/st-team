@@ -122,9 +122,9 @@ class Main extends Component {
                 {this.redirectHome()}
                 <div className="row">
                     <div className="col-md-6 left">
-                        <div className="title">Recent logins</div>
-                        <div className="action">Click your picture or add an account.</div>
-                        <img src='https://lorempixel.com/800/400/food/1' width='350px' />
+                        {/* <div className="title">Recent logins</div> */}
+                        <div style={{marginTop:'50px', fontSize:'20px', fontWeight:'bold'}} className="action">Fakebook giúp bạn kết nối và chia sẻ với mọi <br/> người trong cuộc sống của bạn.</div>
+                        <img src='imgs/fb.jpg' width='300px' />
                     </div>
                     <div className="col-md-5 right">
                         <div className="title">Create a new account</div>
