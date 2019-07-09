@@ -37,7 +37,7 @@ class Main extends Component {
     }
     onSubmitFormSignUp(e) {
         e.preventDefault();
-        if(this.state.confirmCodeFormServer!=='' && this.state.confirmCodeFormServer === Number(this.state.idCode)){
+        if (this.state.confirmCodeFormServer !== '' && this.state.confirmCodeFormServer === Number(this.state.idCode)) {
             this.fetchData.postWithoutAuth(`${this.Auth.apiHome}register`, {
                 first_name: this.state.first_name,
                 last_name: this.state.last_name,
@@ -72,12 +72,12 @@ class Main extends Component {
                     })
                     console.log(err)
                 })
-        }else{
+        } else {
             this.setState({
-                notifyRegister:'Mã xác nhận không đúng'
+                notifyRegister: 'Mã xác nhận không đúng'
             })
         }
-       
+
     }
     validateEmail = (email) => {
         var check = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -100,7 +100,6 @@ class Main extends Component {
     handleBtnGetCodeClick() {
         $('#btnGetCode').hide();
         $('#notifyClick').show();
-        console.log('click getCode r')
         this.fetchData.postWithoutAuth(`${this.Auth.apiUser}confirmEmail`, {
             email: this.state.email
         })
@@ -149,10 +148,7 @@ class Main extends Component {
 
                                     </tr>
                                     <tr>
-                                        <td className="mess" colSpan="2"></td>
-                                    </tr>
-                                    <tr>
-                                        <td colSpan="2"><input className="input-signup" onChange={this.handleOnChange} name="password" value={this.state.password} type="password" id="exampleInputPassword2" placeholder="Password" required autoComplete='off' /></td>
+                                        <td><input className="input-signup" onChange={this.handleOnChange} name="password" value={this.state.password} type="password" id="exampleInputPassword2" placeholder="Password" required autoComplete='off' /></td>
                                     </tr>
                                     <tr>
                                         <td>
