@@ -148,7 +148,7 @@ class Main extends Component {
 
                                     </tr>
                                     <tr>
-                                        <td><input className="input-signup" onChange={this.handleOnChange} name="password" value={this.state.password} type="password" id="exampleInputPassword2" placeholder="Password" required autoComplete='off' /></td>
+                                        <td colSpan="2"><input className="input-signup" onChange={this.handleOnChange} name="password" value={this.state.password} type="password" id="exampleInputPassword2" placeholder="Password" required autoComplete='off' /></td>
                                     </tr>
                                     <tr>
                                         <td>
