@@ -167,15 +167,16 @@ body header {
     top: 4px;
     left: 6px;
     font-size: 20px;
+    color: #212529;
+  }
+  body header .header_control .fr_mes_no .control_img .fa-sort-down:hover .content_logout{
+    color: #1d2129;
   }
   .fa-user-friends, .fa-comment, .fa-bell{
     position: relative;
   }
   body header .header_control .fr_mes_no .control_img img:hover,
   body header .header_control .fr_mes_no .control_img i:hover {
-    color: white
-  }
-  body header .header_control .fr_mes_no .control_img i:active{
     color: white
   }
   

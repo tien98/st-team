@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect} from 'react-router-dom';
 import $ from 'jquery';
 import './css_login/login.css'
 import FetchData from '../../controllers/fetchdata';
@@ -124,7 +124,7 @@ class Main extends Component {
                     <div className="col-md-6 left">
                         <div className="title">Recent logins</div>
                         <div className="action">Click your picture or add an account.</div>
-                        <img src='https://lorempixel.com/800/400/food/1' width='350px' />
+                        <img src='https://lorempixel.com/800/400/food/1' width='350px' alt="img"/>
                     </div>
                     <div className="col-md-5 right">
                         <div className="title">Create a new account</div>

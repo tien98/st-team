@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect , Link} from 'react-router-dom';
+
 import './css_login/login.css';
 import Auth from '../../controllers/auth';
 class Header extends Component {
@@ -20,7 +21,7 @@ class Header extends Component {
             .then(res => {
                 if (res) {
                     console.log(res);
-                    if (res.status == 200) {
+                    if (res.status === 200) {
                         this.setState({
                             logined: true
                         })
@@ -55,7 +56,7 @@ class Header extends Component {
             <div className="container-fluid top">
                 {this.redirectHome()}
                 <div className="row">
-                    <h1 className="col-md-4 logo">fakebook</h1>
+                    <h1 className="col-md-4 logo"><Link to="/login" style={{color:'#ffffff'}}>fakebook</Link></h1>
                     <form className="rounded mx-auto d-block form-login" 
                     onSubmit={this.onSubmitFormLogin.bind(this)}>
                         <table>
@@ -86,15 +87,16 @@ class Header extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td className="input-login"><div ><a href="#1" className="forgot-login">Forgotten account?</a></div></td>
+                                    <td></td>
+                                    <td className="input-login"><div ><Link to="/forget" className="forgot-login">Forgotten account?</Link></div></td>
                                 </tr>
                             </tbody>
                         </table>
                         <div>
-
                         </div>
                     </form>
                 </div>
+                
             </div>
         );
     }

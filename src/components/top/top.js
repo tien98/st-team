@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
-import {Link, NavLink} from 'react-router-dom';
+import { Link, NavLink} from 'react-router-dom';
 import Mess from '../messenger/mess';
+import Logout from '../logout/logout';
 import './css/style.css';
 class top extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            hienThiMess: false 
+            hienThiMess: false,
+            hienThiLogOut: false
         }
     }
-    doiTrangThaiMess = () =>{
+    doiTrangThaiMess = () => {
         this.setState({
             hienThiMess: !this.state.hienThiMess
         })
     }
-    tatMess = () =>{
+    doiTrangThaiMess = () => {
         this.setState({
-            hienThiMess:false
-        })
+            hienThiLogOut: !this.state.hienThiLogOut
+        });
     }
     render() {
         return (
@@ -35,7 +37,7 @@ class top extends Component {
                         <ul>
                             <li>
                                 <NavLink to="/profile" activeClassName="selected">
-                                    <img src={require("../img/logo.jpg")} alt="img"/><span>XXX</span>
+                                    <img src={require("../img/logo.jpg")} alt="img" /><span>XXX</span>
                                 </NavLink>
                             </li>
                             <li>
@@ -56,12 +58,11 @@ class top extends Component {
                             </i>
                         </div>
                         <div className="control_img">
-                            <i className="fas fa-comment" onClick ={this.doiTrangThaiMess}>
-                                <Mess 
-                                    hienThiMess={this.state.hienThiMess}  
-                                    tatMess={this.tatMess}/>
+                            <i className="fas fa-comment" onClick={this.doiTrangThaiMess}>
+                                <Mess
+                                    hienThiMess={this.state.hienThiMess} />
                             </i>
-                            
+
                         </div>
                         <div className="control_img">
                             <i className="fas fa-bell"></i>
@@ -75,10 +76,11 @@ class top extends Component {
                             <i className="fas fa-question-circle"></i>
                         </div>
                         <div className="control_img">
-                            <NavLink to="/login">
-                            <i class="fas fa-sort-down"></i>
-                            </NavLink>
+                            <i class="fas fa-sort-down" onClick={this.doiTrangThaiMess}>
+                                <Logout trangThaiLogOut={this.state.hienThiLogOut} />
+                            </i>
                         </div>
+
                     </div>
                 </div>
             </header>

@@ -4,7 +4,7 @@ class mess extends Component {
     kiemTraTrangThaiMess = () => {
         if (this.props.hienThiMess) {
             return (
-                <div className="mess" onClick={this.props.tatMess}>
+                <div className="mess">
                 <div className="top_mess">
                     <ul className="ul_top_mess">
                         <li className="li_left_top_mess">Recent</li>

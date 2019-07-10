@@ -40,7 +40,7 @@
 .top_mess .li_left_top_mess , .top_mess .li_right_top_mess{
   display: inline;
 }
-::-webkit-scrollbar {
+.mess::-webkit-scrollbar {
   width: 0px;
 }
 
