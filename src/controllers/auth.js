@@ -31,7 +31,7 @@ export default class AuthService {
             .then(res => {
                 if (res.status === 200)
                     this.setToken(res.token);
-                    return Promise.resolve(res);
+                return Promise.resolve(res);
             })
     }
 
