@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './css/style_.css';
+import '../home/css/style.css'
 class profile extends Component {
     render() {
         return (
@@ -9,9 +10,19 @@ class profile extends Component {
                         <div className="profile-name" style={{ height: '250px' }}>
                             <div className="head_bgd_img">
                                 <div className="profile_bgd_img"
-                                    style={{ background: `url(${require("../img/bgd.png")})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: '0 -100px' }}>
+                                    style={{ 
+                                        background: `url(${require("../img/bgd.png")})`,
+                                        backgroundSize: 'cover', 
+                                        backgroundRepeat: 'no-repeat', 
+                                        backgroundPosition: '0 -100px' }}>
+                                    <div className="content_2"> <i class="fas fa-camera" style={{padding:'0px 10px'}}></i></div>
+                                    <div className="content_1" >
+                                        <i class="fas fa-camera" style={{padding:'0px 10px'}}></i>
+                                        <div className="ten">Tải ảnh bìa</div>
+                                    </div>
                                     <img src={require("../img/logo.jpg")} alt="img" />
                                 </div>
+                                
                             </div>
                             <div className="name_profile">
                                 <div className="text font">
@@ -86,7 +97,7 @@ class profile extends Component {
                             <div className="right_content_profile">
                                 <div className="post_profile">
                                     <div className="post_head" id="post_head">
-                                        <img src={require("../img/hqdefault.jpg")} />
+                                        <img src={require("../img/hqdefault.jpg")} alt="img"/>
                                         <div className="post_title" id="post_title">
                                             <p><span id="post_title_me" className="font_post">Hoàng Thùy Linh</span> cùng với <span id="post_title_you" className="font_post" /> và <span id="post_title_number">120</span> người khác</p>
                                             <p id="post_time">31 tháng 1 lúc 14:48 · Công khai</p>
@@ -117,9 +128,7 @@ class profile extends Component {
                                         <div className="post_end_3">
                                             <img src={require("../img/logo.jpg")} alt="error" />
                                             <input type="text" placeholder="Viết bình luận..." />
-                                            {/* <div class="send"> */}
                                             <img src={require("../img/send.png")} id="send" alt="error" />
-                                            {/* </div> */}
                                         </div>
                                     </div>
                                 </div>

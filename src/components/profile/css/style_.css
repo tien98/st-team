@@ -18,29 +18,62 @@
 .control_Content .control_box_2 .head_bgd_img .profile_bgd_img {
   display: block;
   background: red;
-  /* background: url("../img/bgd.png"); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -100px; */
   width: 900px;
-  height: 255px;
+  height: 320px;
   border: solid 2px rgba(149, 165, 166, 0.4);
   border-radius: 0 0 8px 8px;
   border-right: none;
   border-left: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: pointer;
+}
+.head_bgd_img .profile_bgd_img .content_2{
+  visibility: visible;
+}
+.control_Content .control_box_2 .head_bgd_img .profile_bgd_img:hover .content_2{
+  visibility: hidden;
+  
+}
+.head_bgd_img .profile_bgd_img .content_1{
+  position:relative;
+  visibility: hidden;
+  width:170px;
+  height:30px;
+  line-height:28px;
+  background:black;
+  margin:10px 20px;
+  color:#ffffff;
+  box-sizing:border-box;
+  border-radius:2px;
+  border:1px #ffffff solid;
+}
+.head_bgd_img .profile_bgd_img .content_1 .ten{
+  position:absolute;
+  top:0;
+  right:40px;
+  font-weight:bold;
+  color:#ffffff;
+}
+.control_Content .control_box_2 .head_bgd_img .profile_bgd_img:hover .content_1{
+  visibility: visible
 }
 .control_Content .control_box_2 .head_bgd_img .profile_bgd_img img {
+  position: relative;
+  top: 110px;
+  left: 3%;
   width: 168px;
   height: 168px;
   border: 4px solid #fff;
   border-radius: 50%;
-  position: relative;
-  top: 100px;
-  left: 3%;
+  z-index:20;
+  opacity: 1;
+  /* cursor: pointer; */
 }
-
+/* .control_Content .control_box_2 .head_bgd_img .profile_bgd_img img:hover .content_1{
+  visibility: hidden;
+  opacity: 0.5;
+} */
 .control_Content .control_box_2 .name_profile {
   display: block;
   margin-left: 5%;
@@ -54,15 +87,19 @@
 }
 
 .control_Content .control_box_2 .name_profile .text {
-  text-align: center;
+  padding: 0px 10px;
+  text-align: left;
   font-family: sans-serif;
+  line-height: 10px;
 }
 
-.control_Content .control_box_2 .name_profile .text p {
+/* .control_Content .control_box_2 .name_profile .text p {
   padding-top: 6px;
-}
+} */
 
 .control_Content .control_box_2 .bar_profile {
+  position: relative;
+  bottom: -70px;
   width: 900px;
   height: 40px;
   line-height: 40px;
@@ -155,7 +192,7 @@
           flex-direction: row;
   width: 100%;
   height: 500px;
-  margin-top: 10px;
+  margin-top: 70px;
 }
 
 .control_Content .control_box_2 .content_middle_profile .left_content_profile {
