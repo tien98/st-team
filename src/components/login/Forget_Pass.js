@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './css_login/forget_pass.css';
 import Header from './Header';
 class Forget_Pass extends Component {
