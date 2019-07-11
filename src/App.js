@@ -6,8 +6,8 @@ import Profile from './components/profile/profile';
 import Login from './components/login/login';
 import Mess from './components/messenger/mess_left';
 import Forget from './components/login/Forget_Pass';
-import People from './components/people/people';
-import Notfound from './components/notfound/Notfound';
+// import People from './components/people/people';
+// import Notfound from './components/notfound/Notfound';
 import './App.css';
 
 function App() {

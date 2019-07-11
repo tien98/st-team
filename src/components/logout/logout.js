@@ -10,6 +10,7 @@ class logout extends Component {
     logOut = ()=>{
         this.Auth.logOut();    
     }
+    //start laua nhir ? doi xiu
     kiemTraFormLogOut = () => {
         if (this.props.trangThaiLogOut) {
             return (

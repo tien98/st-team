@@ -25,7 +25,7 @@ class Header extends Component {
                         this.setState({
                             logined: true
                         })
-                    }else {
+                    } else {
                         alert(res.msg);
                     }
                 }
@@ -56,9 +56,10 @@ class Header extends Component {
             <div className="container-fluid top">
                 {this.redirectHome()}
                 <div className="row">
-                    <h1 className="col-md-4 logo"><Link to="/login" style={{color:'#ffffff'}}>fakebook</Link></h1>
-                    <form className="rounded mx-auto d-block form-login" 
-                    onSubmit={this.onSubmitFormLogin.bind(this)}>
+                    <h1 className="col-md-4 logo">fakebook</h1>
+                    <form className="rounded mx-auto d-block form-login"
+                        onSubmit={this.onSubmitFormLogin.bind(this)}>
+                            {/* // neu anh pull ve trc thi se pussh len dc ban cuoi */}
                         <table>
                             <tbody>
                                 <tr>
@@ -67,18 +68,18 @@ class Header extends Component {
                                 </tr>
                                 <tr>
                                     <td className='input-login'>
-                                        <input type="email" name="email" 
-                                        onChange={this.handleChange.bind(this)} 
-                                        value={this.state.email} 
-                                        id="exampleInputEmail1" 
-                                        required autoComplete='off' />
+                                        <input type="email" name="email"
+                                            onChange={this.handleChange.bind(this)}
+                                            value={this.state.email}
+                                            id="exampleInputEmail1"
+                                            required autoComplete='off' />
                                     </td>
                                     <td className='input-login'>
-                                        <input type="password" name="password" 
-                                        onChange={this.handleChange.bind(this)} 
-                                        value={this.state.password} 
-                                        id="exampleInputPassword1" 
-                                        required autoComplete='off' />
+                                        <input type="password" name="password"
+                                            onChange={this.handleChange.bind(this)}
+                                            value={this.state.password}
+                                            id="exampleInputPassword1"
+                                            required autoComplete='off' />
 
                                     </td>
                                     <td className='input-login'>

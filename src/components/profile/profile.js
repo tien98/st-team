@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 import './css/style_.css';
-import '../home/css/style.css'
+import Auth from '../../controllers/auth';
 class profile extends Component {
+    constructor(props) {
+        super(props);
+        this.Auth = new Auth();
+    }
+    componentWillMount() {
+        if (!this.Auth.loggedIn()) {
+            this.props.history.replace('/login');
+        }
+    }
     render() {
         return (
             <div>

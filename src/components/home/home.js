@@ -6,6 +6,9 @@ class home extends Component {
     constructor(props) {
         super(props);
         this.Auth = new Auth();
+        this.state = {
+            user : null
+        }
     }
     componentWillMount() {
         if (!this.Auth.loggedIn()) {
